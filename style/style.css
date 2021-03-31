@@ -1,0 +1,114 @@
+/* winter theme*/
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  background: #e9f6fb;
+}
+
+#game-over {
+  display: none;
+  width: 468px;
+  height: 468px;
+  position: absolute;
+  background: rgba(218, 229, 238, 0.73);
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#game-over p {
+  color: #3a4c57;
+  font-size: 60px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+}
+
+.game-container {
+  background: #454c53;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 100px auto;
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.tile-container {
+  background: #586674;
+  border-radius: 0.25rem;
+}
+
+.tile {
+  position: relative;
+  text-align: center;
+  border-radius: inherit;
+  line-height: 105px;
+  font-size: 3.5rem;
+  color: #454c53;
+}
+
+.num-2 {
+  background: #cae7f6;
+}
+
+.num-4 {
+  background: #9cdef6;
+}
+
+.num-8 {
+  background: #91c9f4;
+}
+
+.num-16 {
+  background: #6cb0f2;
+}
+
+.num-32 {
+  background: #0077bc;
+}
+
+.num-64 {
+  background: #1da3b8;
+}
+
+.num-128 {
+  background: #52b97a;
+  font-size: 2.7rem;
+}
+
+.num-256 {
+  background: #50bfa1;
+  font-size: 2.7rem;
+}
+
+.num-512 {
+  background: #67dbbc;
+  font-size: 2.7rem;
+}
+
+.num-1024 {
+  background: #c7f0bf;
+  font-size: 2rem;
+}
+
+.num-2048 {
+  font-size: 2rem;
+  background: #dbcb9a;
+}
