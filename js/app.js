@@ -98,7 +98,7 @@ let thirdLine;
 let fourthLine;
 
 function moveTiles(pressedKey) {
-  $(".tile").removeClass("added-up");
+  $(".tile").removeClass("added-up").css("animation", "");
   for (let i = 1; i < 5; i++) {
     switch (pressedKey) {
       case "ArrowUp":
