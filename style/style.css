@@ -12,9 +12,23 @@
 }
 
 body {
+  height: 100vh;
   overflow: hidden;
   font-family: "M PLUS Rounded 1c", sans-serif;
   background: #e9f6fb;
+  display: grid;
+  place-items: center;
+}
+
+.game-container {
+  background: #454c53;
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+  padding: 1rem;
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 1rem;
 }
 
 #game-over {
@@ -37,18 +51,6 @@ body {
   font-weight: bold;
   height: 60px;
   line-height: 60px;
-}
-
-.game-container {
-  background: #454c53;
-  width: 500px;
-  height: 500px;
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 100px auto;
-  display: grid;
-  grid: repeat(4, 1fr) / repeat(4, 1fr);
-  gap: 1rem;
 }
 
 .tile-container {
